@@ -953,7 +953,7 @@ fn hide_lines(html: &str, code_config: &Code) -> String {
                 format!(
                     "<code class=\"{}\">{}</code>",
                     classes,
-                    hide_lines_rust(code)
+                    code // hide_lines_rust(code)
                 )
             } else {
                 // First try to get the prefix from the code block
